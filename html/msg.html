@@ -1,0 +1,29 @@
+{% extends "html/base.html" %}
+
+{% block the_body %}
+<table width="60%" align="center">
+    <tr>
+        <td>
+            <table class="CSSForm">
+                <tr>
+                    <td>
+                        <h1>{{ title }}</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%"><h2>{{msg}}</h2></td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        <input type='button' value='Done' onclick="window.location = '{{ Navigator.Root }}'" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+
+
+{% endblock %}

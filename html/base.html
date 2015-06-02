@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ Navigator.CSS('default.css?0070') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ Navigator.CSS('form.css?0070') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ Navigator.CSS('table.css?0070') }}" />
+    <script src="{{ Navigator.JS('loadXMLDoc.js') }}"></script>
+</head>
+<body id="main_body" bgcolor="#ffbfff" onload="loadXMLDoc('navigator', '{{ Navigator.Link }}')">
+<table width="60%" align="center">
+    <tr>
+        <td>
+            <table class="CSSFrame">
+                <tr>
+                    <td>
+                        <br /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="navigator" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+        {% block the_body %}
+        {% endblock %}
+<table width="60%" align="center">
+    <tr>
+        <td>
+            <table class="CSSFrame">
+                <tr><td></td></tr>
+                <tr><td>
+                    Yu Chen C00151352
+                </td></tr>
+            </table>
+            <table class="CSSFrame">
+                <tr><td><br /></td></tr>
+            </table>
+
+        </td>
+    </tr>
+</table>
+</body>
+</html>

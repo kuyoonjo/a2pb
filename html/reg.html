@@ -1,0 +1,46 @@
+{% extends "html/base.html" %}
+
+{% block the_body %}
+<form action='{{ Navigator.Registration.Process }}' method='POST'>
+<table width="60%" align="center">
+    <tr>
+        <td>
+            <table class="CSSForm">
+                <tr>
+                    <td colspan="4">
+                        <h1>{{ title }}</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="25%" rowspan="5" />
+                    <td width="25%" align="right">User-id:</td>
+                    <td width="25%"><input type='text' name='userid'></td>
+                    <td width="25%" rowspan="5" />
+                </tr>
+                <tr align="center">
+                    <td>Email address:</td>
+                    <td><input type='email' name='email'></td>
+                </tr>
+                <tr align="center">
+                    <td>Password:</td>
+                    <td><input type='password' name='passwd'></td>
+                </tr>
+                <tr align="center">
+                    <td>Password (again):</td>
+                    <td><input type='password' name='passwd2'></td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2">
+                        <input type='submit' value='Register'>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</form>
+
+
+
+
+{% endblock %}

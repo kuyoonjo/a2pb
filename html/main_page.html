@@ -1,0 +1,45 @@
+{% extends "html/base.html" %}
+
+{% block the_body %}
+<table width="60%" align="center">
+    <tr>
+        <td>
+            <table class="CSSForm">
+                <tr>
+                    <td>
+                        <h1>{{ title }}</h1>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table class="CSSFrame">
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Hi {{user.id}},</p>
+                        <p>
+                            {% if pages %}
+                        <ul>
+                            {% for page in pages %}
+                            <li><a href="{{page.url}}">{{page.name}}</a></li>
+                            {% endfor %}
+                        </ul>
+                        {% else %}
+                        {{ msg }}
+                        {% endif %}
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{% endblock %}

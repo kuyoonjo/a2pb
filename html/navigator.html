@@ -1,0 +1,6 @@
+{% if uid %}
+<a href="{{ Navigator.Logout}}">Logout</a>
+{% else %}
+<a href="{{ Navigator.Login.Form }}">Login</a>
+{% endif %}
+<a href="{{ Navigator.Registration.Form }}">Register</a>

@@ -1,0 +1,44 @@
+{% extends "html/base.html" %}
+
+{% block the_body %}
+
+<form action='{{ Navigator.Login.Process }}' method='POST'>
+    <table width="60%" align="center">
+        <tr>
+            <td>
+                <table class="CSSForm">
+                    <tr>
+                        <td colspan="4">
+                            <h1>{{ title }}</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            {% if msg %}
+                            <h2>{{ msg }}</h2>
+                            {% endif %}
+                            <p>Forgot password? Click <a href="{{ Navigator.Email.PasswordReset }}">here</a> to reset your password.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="25%" rowspan="3" />
+                        <td width="25%" align="right">User-id:</td>
+                        <td width="25%"><input type='text' name='userid'></td>
+                        <td width="25%" rowspan="3" />
+                    </tr>
+                    <tr align="center">
+                        <td>Password:</td>
+                        <td><input type='password' name='passwd'></td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2">
+                            <input type='submit' value='Login'>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</form>
+
+{% endblock %}

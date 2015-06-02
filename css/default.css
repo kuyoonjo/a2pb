@@ -1,0 +1,94 @@
+.CSSFrame {
+    margin:0px;padding:0px;
+    width:100%;
+    border:1px solid #ffbfff;
+
+    -moz-border-radius-bottomleft:0px;
+    -webkit-border-bottom-left-radius:0px;
+    border-bottom-left-radius:0px;
+
+    -moz-border-radius-bottomright:0px;
+    -webkit-border-bottom-right-radius:0px;
+    border-bottom-right-radius:0px;
+
+    -moz-border-radius-topright:0px;
+    -webkit-border-top-right-radius:0px;
+    border-top-right-radius:0px;
+
+    -moz-border-radius-topleft:0px;
+    -webkit-border-top-left-radius:0px;
+    border-top-left-radius:0px;
+}.CSSFrame table{
+     border-collapse: collapse;
+     border-spacing: 0;
+     width:100%;
+     height:100%;
+     margin:0px;padding:0px;
+ }.CSSFrame tr:last-child td:last-child {
+      -moz-border-radius-bottomright:0px;
+      -webkit-border-bottom-right-radius:0px;
+      border-bottom-right-radius:0px;
+  }
+.CSSFrame table tr:first-child td:first-child {
+    -moz-border-radius-topleft:0px;
+    -webkit-border-top-left-radius:0px;
+    border-top-left-radius:0px;
+}
+.CSSFrame table tr:first-child td:last-child {
+    -moz-border-radius-topright:0px;
+    -webkit-border-top-right-radius:0px;
+    border-top-right-radius:0px;
+}.CSSFrame tr:last-child td:first-child{
+     -moz-border-radius-bottomleft:0px;
+     -webkit-border-bottom-left-radius:0px;
+     border-bottom-left-radius:0px;
+ }.CSSFrame tr:hover td{
+
+  }
+.CSSFrame tr:nth-child(odd){ background-color:#ffbfff; }
+.CSSFrame tr:nth-child(even)    { background-color:#ffeaff; }.CSSFrame td{
+                                                                 vertical-align:middle;
+
+
+                                                                 border:1px solid #ffbfff;
+                                                                 border-width:0px 1px 1px 0px;
+                                                                 text-align:left;
+                                                                 padding:7px;
+                                                                 font-size:10px;
+                                                                 font-family:Arial;
+                                                                 font-weight:normal;
+                                                                 color:#000000;
+                                                             }.CSSFrame tr:last-child td{
+                                                                  border-width:0px 1px 0px 0px;
+                                                              }.CSSFrame tr td:last-child{
+                                                                   border-width:0px 0px 1px 0px;
+                                                               }.CSSFrame tr:last-child td:last-child{
+                                                                    border-width:0px 0px 0px 0px;
+                                                                }
+.CSSFrame tr:first-child td{
+    background:-o-linear-gradient(bottom, #ed00ed 5%, #bf00bf 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ed00ed), color-stop(1, #bf00bf) );
+    background:-moz-linear-gradient( center top, #ed00ed 5%, #bf00bf 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ed00ed", endColorstr="#bf00bf");	background: -o-linear-gradient(top,#ed00ed,bf00bf);
+
+    background-color:#ed00ed;
+    border:0px solid #ffbfff;
+    text-align:center;
+    border-width:0px 0px 1px 1px;
+    font-size:14px;
+    font-family:Arial;
+    font-weight:bold;
+    color:#ffffff;
+}
+.CSSFrame tr:first-child:hover td{
+    background:-o-linear-gradient(bottom, #ed00ed 5%, #bf00bf 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ed00ed), color-stop(1, #bf00bf) );
+    background:-moz-linear-gradient( center top, #ed00ed 5%, #bf00bf 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ed00ed", endColorstr="#bf00bf");	background: -o-linear-gradient(top,#ed00ed,bf00bf);
+
+    background-color:#ed00ed;
+}
+.CSSFrame tr:first-child td:first-child{
+    border-width:0px 0px 1px 0px;
+}
+.CSSFrame tr:first-child td:last-child{
+    border-width:0px 0px 1px 1px;
+}

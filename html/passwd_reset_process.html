@@ -1,0 +1,33 @@
+{% extends "html/base.html" %}
+
+{% block the_body %}
+<table width="60%" align="center">
+    <tr>
+        <td>
+            <table class="CSSForm">
+                <tr>
+                    <td>
+                        <h1>{{ title }}</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%"><h2>{{msg}}</h2></td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        {% if not success %}
+                        <input type='button' value='Back' onclick="window.location = '{{ Navigator.Email.PasswordReset }}'" />
+                        {% else %}
+                        <input type='button' value='Done' onclick="window.location = '{{ Navigator.Root }}'" />
+                        {% endif %}
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+
+
+{% endblock %}
